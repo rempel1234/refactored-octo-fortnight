@@ -1,11 +1,1 @@
-sudo mkdir /opt
-cd /opt
-sudo wget -c https://repo1.maven.org/maven2/org/onosproject/onos-releases/$ONOS_VERSION/onos-$ONOS_VERSION.tar.gz
-sudo tar xzf onos-$ONOS_VERSION.tar.gz
-sudo mv onos-$ONOS_VERSION onos
-# /opt/onos/bin/onos-service start
-# Reference https://wiki.onosproject.org/display/ONOS/Installing+on+a+single+machine
-sudo cp /opt/onos/init/onos.service /etc/systemd/system/
-sudo systemctl daemon-reload
-sudo systemctl enable onos
-# Reference https://wiki.onosproject.org/display/ONOS/Running+ONOS+as+a+service
+apt-get install golang
